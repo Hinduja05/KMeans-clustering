@@ -59,7 +59,7 @@ def load_model():
     """Load the trained KMeans model"""
 
     try:
-        model = joblib.load("kmeans_model.pkl")
+        model = joblib.load("Kmeans_model.pkl")
         return model
     except FileNotFoundError:
         st.error("Model file not found. Please train the model first.")
