@@ -56,7 +56,8 @@ st.markdown("""
 # Load the trained model
 @st.cache_resource
 def load_model():
-    """Load the trained Decision Tree model"""
+    """Load the trained KMeans model"""
+
     try:
         model = joblib.load("kmeans_model.pkl")
         return model
